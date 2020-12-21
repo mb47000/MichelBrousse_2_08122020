@@ -28,7 +28,8 @@
             <img src="images/logo/Reservia.svg" alt="logo reservia" />
           </div>
           <ul class="nav-main">
-            <a href="#rentals-anchor" ><li>Hébergements</li></a>
+            <a href="#"><li>Hébergements</li></a
+            ><!-- rentals-anchor -->
             <a href="#activities-anchor"><li>Activités</li></a>
           </ul>
           <div class="nav-sign-up">
@@ -37,7 +38,6 @@
         </nav>
       </header>
 
-      
       <main>
         <section class="search-bar">
           <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -80,81 +80,142 @@
           </form>
         </section>
         <section class="search-results">
-          <section id="rentals-anchor" class="rentals-results" >
+          <section id="rentals-anchor" class="rentals-results">
             <!-- may be main tag better's ? -->
             <h2>Hébergements à Marseille</h2>
             <div class="rentals-cards-wrap">
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt=""
                 />
-                <h3>Auberge la Cannebière</h3>
-                <p>Nuit à partir de <span>25€</span></p>
+                <h3><span itemprop="name">Auberge la Cannebière</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">25€</span></p>
                 <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel du port</h3>
-                <p>Nuit à partir de <span>52€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel du port</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">52€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="5" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel Les mouettes</h3>
-                <p>Nuit à partir de <span>76€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel Les mouettes</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">76€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel de la mer</h3>
-                <p>Nuit à partir de <span>46€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel de la mer</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">46€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="3" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                   alt=""
                 />
-                <h3>Auberge Le Panier</h3>
-                <p>Nuit à partir de <span>23€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Auberge Le Panier</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">23€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="rentals-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="rentals-card"
+              >
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel chez Amina</h3>
-                <p>Nuit à partir de <span>96€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel chez Amina</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">96€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="5" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
             </div>
             <a href="#">Afficher Plus</a>
@@ -165,91 +226,151 @@
               <i class="fas fa-chart-line"></i>
             </div>
             <div class="most-popular-cards-wrap">
-              <article class="most-popular-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="most-popular-card"
+              >
                 <img
                   src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel Le soleil du matin</h3>
-                <p>Nuit à partir de <span>128€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel Le soleil du matin</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">128€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="most-popular-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="most-popular-card"
+              >
                 <img
                   src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt=""
                 />
-                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                <p>Nuit à partir de <span>71€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3>
+                  <span itemprop="name"
+                    >Au coeur de l'eau Chambres d'hôtes</span
+                  >
+                </h3>
+                <p>Nuit à partir de <span itemprop="priceRange">71€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
-              <article class="most-popular-card">
+              <article
+                itemscope
+                itemtype="http://schema.org/Hotel"
+                class="most-popular-card"
+              >
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt=""
                 />
-                <h3>Hôtel Tout bleu et Blanc</h3>
-                <p>Nuit à partir de <span>68€</span></p>
-                <!-- check best way to display rating with semantic html -->
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
+                <h3><span itemprop="name">Hôtel Tout bleu et Blanc</span></h3>
+                <p>Nuit à partir de <span itemprop="priceRange">68€</span></p>
+                <span
+                  itemprop="starRating"
+                  itemscope
+                  itemtype="http://schema.org/Rating"
+                >
+                  <meta itemprop="ratingValue" content="4" />
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </span>
               </article>
             </div>
           </aside>
           <aside id="activities-anchor" class="activities">
             <h2>Activités à Marseille</h2>
             <div class="activities-card-wrap">
-              <article class="activities-card">
+              <article
+                itemscope
+                itemtype="https://schema.org/Place"
+                class="activities-card"
+              >
                 <img
                   src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt=""
                 />
-                <h3>Vieux Port</h3>
+                <h3><span itemprop="name">Vieux Port</span></h3>
               </article>
               <div class="two-cards">
-                <article class="activities-card">
+                <article
+                  itemscope
+                  itemtype="https://schema.org/Place"
+                  class="activities-card"
+                >
                   <img
                     src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                     alt=""
                   />
-                  <h3>Fort de Pomègues</h3>
+                  <h3><span itemprop="name">Fort de Pomègues</span></h3>
                 </article>
-                <article class="activities-card">
+                <article
+                  itemscope
+                  itemtype="https://schema.org/Place"
+                  class="activities-card"
+                >
                   <img
                     src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                     alt=""
                   />
-                  <h3>Îles du Frioul</h3>
+                  <h3><span itemprop="name">Îles du Frioul</span></h3>
                 </article>
               </div>
-              <article class="activities-card">
+              <article
+                itemscope
+                itemtype="https://schema.org/Place"
+                class="activities-card"
+              >
                 <img
                   src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt=""
                 />
-                <h3>Parc National des Calanques</h3>
+                <h3>
+                  <span itemprop="name">Parc National des Calanques</span>
+                </h3>
               </article>
               <div class="two-cards">
-                <article class="activities-card">
+                <article
+                  itemscope
+                  itemtype="https://schema.org/Place"
+                  class="activities-card"
+                >
                   <img
                     src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                     alt=""
                   />
-                  <h3>Notre-Dame-de-la-Garde</h3>
+                  <h3><span itemprop="name">Notre-Dame-de-la-Garde</span></h3>
                 </article>
-                <article class="activities-card">
+                <article
+                  itemscope
+                  itemtype="https://schema.org/Place"
+                  class="activities-card"
+                >
                   <img
                     src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                     alt=""
                   />
-                  <h3>Parc Longchamp</h3>
+                  <h3><span itemprop="name">Parc Longchamp</span></h3>
                 </article>
               </div>
             </div>
