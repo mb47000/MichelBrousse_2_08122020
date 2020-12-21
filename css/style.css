@@ -38,8 +38,13 @@ nav ul {
   padding: 0;
 }
 
-nav ul a {
+nav ul li {
   width: 50%;
+}
+
+nav ul a {
+  height: 100%;
+  border-top: 2px solid white;
 }
 
 nav ul a:focus {
@@ -55,8 +60,9 @@ nav ul a,
   align-items: center;
 }
 
-nav ul li {
-  padding-left: 0.3em;
+nav ul span {
+  padding-left: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
 .nav-brand {
@@ -114,9 +120,11 @@ nav ul li {
     order: 3;
   }
 
-  nav ul a {
-    padding-top: 2.3rem;
-    padding-bottom: 1.4rem;
+  nav ul li {
+    height: 5.6rem
+  }
+
+  nav ul li a {
     border-bottom: 0.3rem solid #DEDEDE;
   }
 
@@ -124,6 +132,10 @@ nav ul li {
     font-weight: 600;
     border-top: none;
     border-bottom: 0.3rem solid #0065FC;
+  }
+
+  nav ul span {
+    margin-top: 1rem;
   }
 
   .nav-sign-up {

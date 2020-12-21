@@ -28,9 +28,13 @@
             <img src="images/logo/Reservia.svg" alt="logo reservia" />
           </div>
           <ul class="nav-main">
-            <a href="#"><li>Hébergements</li></a
-            ><!-- rentals-anchor -->
-            <a href="#activities-anchor"><li>Activités</li></a>
+            <li>
+              <a href="#"> <span>Hébergements</span> </a>
+            </li>
+            <!-- rentals-anchor -->
+            <li>
+              <a href="#activities-anchor"> <span>Activités</span> </a>
+            </li>
           </ul>
           <div class="nav-sign-up">
             <a href="#">S'inscrire</a>
@@ -39,47 +43,42 @@
       </header>
 
       <main>
-        <section class="search-bar">
-          <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-          <h2>En plein centre ville ou en pleine nature</h2>
-          <form action="">
-            <div>
-              <i class="fas fa-map-marker-alt"></i>
-              <input type="text" name="location" value="Marseille, France" />
-              <button type="submit">Rechercher</button>
-            </div>
-            <fieldset class="search-filters">
-              <legend>Filtres</legend>
-              <span>
-                <i class="fas fa-money-bill-wave"></i>
-                <input type="checkbox" name="economic" id="economic" />
-                <label for="economic">Économique</label>
-              </span>
-              <span>
-                <i class="fas fa-child"></i>
-                <input type="checkbox" name="family" id="family" />
-                <label for="family">Familial</label>
-              </span>
-              <span>
-                <i class="fas fa-heart"></i>
-                <input type="checkbox" name="romantic" id="romantic" />
-                <label for="romantic">Romantique</label>
-              </span>
-              <span>
-                <i class="fas fa-dog"></i>
-                <input type="checkbox" name="pets-allowed" id="pets-allowed" />
-                <label for="pets-allowed">Animaux autorisés</label>
-              </span>
-            </fieldset>
-            <output>
-              <i class="fas fa-info"></i
-              ><span
-                >Plus de 500 logements sont disponible dans cette ville</span
-              >
-            </output>
-          </form>
-        </section>
-        <section class="search-results">
+        <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
+        <form>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" name="location" value="Marseille, France" />
+            <button type="submit">Rechercher</button>
+          </div>
+          <fieldset class="search-filters">
+            <legend>Filtres</legend>
+            <span>
+              <i class="fas fa-money-bill-wave"></i>
+              <input type="checkbox" name="economic" id="economic" />
+              <label for="economic">Économique</label>
+            </span>
+            <span>
+              <i class="fas fa-child"></i>
+              <input type="checkbox" name="family" id="family" />
+              <label for="family">Familial</label>
+            </span>
+            <span>
+              <i class="fas fa-heart"></i>
+              <input type="checkbox" name="romantic" id="romantic" />
+              <label for="romantic">Romantique</label>
+            </span>
+            <span>
+              <i class="fas fa-dog"></i>
+              <input type="checkbox" name="pets-allowed" id="pets-allowed" />
+              <label for="pets-allowed">Animaux autorisés</label>
+            </span>
+          </fieldset>
+          <output>
+            <i class="fas fa-info"></i
+            ><span>Plus de 500 logements sont disponible dans cette ville</span>
+          </output>
+        </form>
           <section id="rentals-anchor" class="rentals-results">
             <!-- may be main tag better's ? -->
             <h2>Hébergements à Marseille</h2>
@@ -375,7 +374,6 @@
               </div>
             </div>
           </aside>
-        </section>
       </main>
       <footer>
         <section class="about">
