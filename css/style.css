@@ -9,24 +9,29 @@ body {
 }
 
 h1 {
-  font-size: 2.15rem;
+  font-size: 2.2rem;
   font-weight: 800;
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-  margin-left: 0.2rem;
+  margin: 1.2rem 0 0.5rem 0.2rem;
+  padding-left: 0.2%;
 }
 
 h2 {
   margin-top: 0.7rem;
   margin-left: 0.2rem;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 500;
+  padding-left: 0.2%;
+}
+
+h3 {
+  font-size: 1.55rem;
+  font-weight: 800;
 }
 
 .container {
   margin: 0 auto;
   max-width: 134rem;
-  padding: 0 5.3rem;
+  padding: 0 5rem;
 }
 
 a {
@@ -34,14 +39,14 @@ a {
   text-decoration: none;
 }
 
-
 /* Header's Rules */
 nav {
   font-weight: 500;
-  font-size: 1.545rem;
+  font-size: 1.6rem;
   display: flex;
   text-align: center;
   align-items: stretch;
+  padding-left: 0.2%;
 }
 
 ul {
@@ -64,8 +69,8 @@ nav ul a {
 
 nav ul a:focus {
   font-weight: 600;
-  border-top: 2px solid #0065FC;
-  color: #0065FC;
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 
 nav ul a,
@@ -98,12 +103,330 @@ nav ul span {
 }
 
 .nav-sign-up a {
-  color: #0065FC;
+  color: #0065fc;
 }
 
+/* main rules */
+form {
+  margin-bottom: 14.9rem;
+}
+
+main > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main > div img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blue.fa-star:before {
+  color: #0065fc;
+}
+
+/* div results */
+
+section.rentals-results,
+aside.most-popular {
+  box-sizing: border-box;
+  padding: 2.7% 2.7% 1.9% 2.7%;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+}
+
+section.rentals-results h2,
+aside.most-popular h2,
+aside.activities h2 {
+  margin-bottom: 0.95rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+aside.most-popular a,
+.rentals-cards-wrap a {
+  -webkit-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+}
+
+[itemprop="priceRange"]::after {
+  content: "€";
+  font-weight: bold;
+}
+
+.grey.fa-star:before {
+  color: #d9d9d9;
+}
+
+article div > div {
+  margin: 0.7rem 0 0.45rem 0;
+}
+
+/* rentals-results */
+
+section.rentals-results {
+  width: 65.68%;
+  margin-right: 2.99%;
+}
+
+section.rentals-results > a {
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 1.1rem;
+  margin-left: 0.7rem;
+}
+
+article p {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.rentals-cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.2rem;
+}
+
+.rentals-cards-wrap article {
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.rentals-cards-wrap article > div {
+  padding: 0.1rem 0 0 1.1rem;
+}
+
+.rentals-cards-wrap a {
+  box-sizing: border-box;
+  width: 30.4%;
+  margin-right: 0.5%;
+  margin-bottom: 3rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+
+.rentals-cards-wrap a:first-of-type,
+.rentals-cards-wrap a:nth-child(4) {
+  margin-left: 0.5%;
+}
+
+.rentals-cards-wrap img {
+  max-height: 11.45rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.rentals-cards-wrap h3 {
+  margin: 0.5rem 0;
+}
+
+.rentals-cards-wrap a:first-child [itemprop="priceRange"],
+.rentals-cards-wrap a:nth-child(5) [itemprop="priceRange"] {
+  font-weight: bold;
+}
+
+/* most-popular */
+
+aside.most-popular {
+  width: 31.331%;
+  margin-top: 0.1%;
+}
+
+aside.most-popular h2 {
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+aside.most-popular div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.most-popular-cards-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+aside.most-popular a {
+  width: 100%;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 2.6rem 0 0.9rem 0;
+}
+
+aside.most-popular article {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1.35%;
+}
+
+aside.most-popular article > div {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.most-popular div > div {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.8rem;
+}
+
+.most-popular div p {
+  margin-top: 0;
+}
+
+.most-popular img {
+  border-radius: 1.5rem 0 0 1.5rem;
+  width: 37.8%;
+  height: 13.3rem;
+}
+
+.most-popular h3 {
+  margin: 1.1rem 0 0.7rem 0;
+}
+
+.fa-chart-line::before {
+  font-size: 2.3rem;
+}
+
+aside.most-popular div:first-child h2 {
+  display: inline-block;
+}
+
+/* activities */
+aside.activities {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  margin-top: 5.4rem;
+}
+
+aside.activities h2 {
+  margin-left: 0;
+  padding-left:0;
+}
+
+aside.activities h3 {
+  margin-top: 2.1rem;
+  margin-left: 1.8rem;
+  padding-left:0;
+}
+
+.activities .activities-card-wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  height: 44.5rem;
+  margin-top: 1.3rem;
+}
+
+.activities-card-wrap a {
+  width: 22.5%;
+}
+
+.activities-card-wrap a:nth-of-type(1), .activities-card-wrap a:nth-of-type(4) {
+  height: 100%;
+}
+
+.activities-card-wrap a:nth-of-type(2) {
+  height: 53%;
+}
+
+.activities-card-wrap a:nth-of-type(3) {
+  height: 37.5%;
+}
+
+.activities-card-wrap a:nth-of-type(5) {
+  height: 43.5%;
+}
+
+.activities-card-wrap a:nth-of-type(6) {
+  height: 47%;
+}
+
+.activities-card-wrap .activities-card {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
+}
+
+.activities-card-wrap img {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.activities-card-wrap a:nth-of-type(1) .activities-card img, .activities-card-wrap a:nth-of-type(4) .activities-card img {
+  height: 38.86rem;
+}
+
+.activities-card-wrap a:nth-of-type(2) .activities-card img {
+  height: 18rem;
+}
+
+.activities-card-wrap a:nth-of-type(3) .activities-card img {
+  height: 11rem;
+}
+
+.activities-card-wrap a:nth-of-type(5) .activities-card img {
+  height: 14rem;
+}
+
+.activities-card-wrap a:nth-of-type(6) .activities-card img {
+  height: 15.3rem;
+}
+
+.activities-card {
+  border-radius: 2rem;
+}
+
+/* footer */
+
+/* Large devices */
+@media (max-width: 1200px) {
+  .rentals-cards-wrap a {
+    width: 47%;
+  }
+
+  aside.most-popular {
+    max-height: 61rem;
+  }
+
+  .most-popular img {
+    height: auto;
+  }
+
+  .activities .activities-card-wrap {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .activities .activities-card-wrap a {
+    height: auto;
+    width: 48%;
+    margin-bottom: 3rem;
+  }
+
+  .activities-card-wrap a .activities-card img {
+    height: 10rem !important;
+  }
+}
 
 /* tablet */
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   .nav-main {
     width: 35%;
   }
@@ -115,12 +438,50 @@ nav ul span {
   .nav-brand {
     width: 45%;
   }
- }
+
+  aside.most-popular,
+  section.rentals-results {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  section.rentals-results {
+    order: 2;
+  }
+
+  aside.most-popular {
+    order: 1;
+    max-height: none;
+  }
+
+  aside .most-popular-cards-wrap a {
+    margin: 1%;
+  }
+
+  aside.activities {
+    order: 3;
+  }
+}
 
 
- /* mobile */
- @media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
+  .most-popular-cards-wrap article {
+    flex-direction: column;
+  }
 
+  .most-popular-cards-wrap {
+    flex-direction: row;
+  }
+
+  .most-popular img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    max-height: 10rem;
+    width: 100%;
+  }
+}
+
+/* mobile */
+@media (max-width: 768px) {
   .container {
     padding: 0;
     max-width: 100%;
@@ -136,17 +497,17 @@ nav ul span {
   }
 
   nav ul li {
-    height: 5.6rem
+    height: 5.6rem;
   }
 
   nav ul li a {
-    border-bottom: 0.3rem solid #DEDEDE;
+    border-bottom: 0.3rem solid #dedede;
   }
 
   nav ul a:focus {
     font-weight: 600;
     border-top: none;
-    border-bottom: 0.3rem solid #0065FC;
+    border-bottom: 0.3rem solid #0065fc;
   }
 
   nav ul span {
@@ -167,10 +528,78 @@ nav ul span {
     width: 50%;
     margin-top: 2.4rem;
     margin-bottom: 0;
-    
   }
 
   .nav-brand img {
     padding-left: 2rem;
   }
- }
+
+  
+  aside.most-popular {
+    border-radius: 0;
+    padding: 2rem 5.75% 2.6rem 5.75%;
+  }
+ 
+  aside.most-popular h2 {
+    margin-top: 1.5rem;
+}
+  
+  .most-popular img {
+    height: 13.5rem;
+    max-height: 13.5rem;
+    width: 39%;
+  }
+
+  .most-popular-cards-wrap {
+    margin-top: 2.5rem;
+  }
+
+  aside .most-popular-cards-wrap a {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  section.rentals-results {
+  padding: 1rem 2rem;
+  background-color: white;
+  }
+
+  .rentals-results .rentals-cards-wrap {
+    margin-top: 1.7rem;
+  }
+
+  .rentals-cards-wrap a {
+    margin: 0 0 1.3rem 0;
+  }
+  
+  section.rentals-results a {
+    width: 100%;
+  }
+
+  aside.activities {
+    margin-top: 0.1rem;
+  }
+
+  aside.activities h2 {
+    margin-left: 2.5rem;
+  }
+
+  .activities .activities-card-wrap {
+    justify-content: center;
+    margin-top: 1.9rem;
+  }
+
+  .activities .activities-card-wrap a {
+    width: 90%;
+  }
+
+  .activities-card-wrap a .activities-card img {
+    height: 13.3rem !important;
+  }
+}
+
+@media (max-width: 385px) {
+  .most-popular img {
+    min-width: 12.594rem;
+  }
+}
