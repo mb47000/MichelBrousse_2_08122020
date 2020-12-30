@@ -48,32 +48,28 @@
         <form>
           <div>
             <i class="fas fa-map-marker-alt"></i>
-            <input type="text" name="location" value="Marseille, France" />
-            <button type="submit">Rechercher</button>
+            <input type="search" name="location" value="Marseille, France" />
+            <button type="submit"><span class="desktop-only">Rechercher</span><i class="fas fa-search mobile-only"></i> </button>
           </div>
-          <fieldset class="search-filters">
-            <legend>Filtres</legend>
+          <div class="search-filters">
+            <span>Filtres</span>
             <span>
               <i class="fas fa-money-bill-wave"></i>
-              <input type="checkbox" name="economic" id="economic" />
-              <label for="economic">Économique</label>
+              <button>Économique</button>
             </span>
             <span>
               <i class="fas fa-child"></i>
-              <input type="checkbox" name="family" id="family" />
-              <label for="family">Familial</label>
+              <button>Familial</button>
             </span>
             <span>
               <i class="fas fa-heart"></i>
-              <input type="checkbox" name="romantic" id="romantic" />
-              <label for="romantic">Romantique</label>
+              <button>Romantique</button>
             </span>
             <span>
               <i class="fas fa-dog"></i>
-              <input type="checkbox" name="pets-allowed" id="pets-allowed" />
-              <label for="pets-allowed">Animaux autorisés</label>
+              <button>Animaux autorisés</button>
             </span>
-          </fieldset>
+          </div>
           <output>
             <i class="fas fa-info"></i
             ><span>Plus de 500 logements sont disponible dans cette ville</span>

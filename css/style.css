@@ -107,10 +107,6 @@ nav ul span {
 }
 
 /* main rules */
-form {
-  margin-bottom: 14.9rem;
-}
-
 main > div {
   display: flex;
   flex-wrap: wrap;
@@ -122,11 +118,161 @@ main > div img {
   object-position: center;
 }
 
-.blue.fa-star:before {
+/* form search */
+
+form {
+  margin-bottom: 3.5rem;
+}
+
+form div:first-of-type {
+  display: flex;
+  margin-left: 0.4rem;
+  margin-top: 1.7rem;
+}
+
+form div:first-of-type i {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  background-color: #f2f2f2;
+  height: 5.2rem;
+  width: 5.2rem;
+  position: relative;
+}
+
+form div:first-of-type i::before {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  font-size: large;
+  position: absolute;
+  left: calc(50% - 0.675rem);
+  top: calc(50% - 0.9rem);
+}
+
+form div:first-of-type button {
+  border: none;
+  border-radius: 0 1.5rem 1.5rem 0;
+  background-color: #0065fc;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 0.1rem 1.6rem;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: inline;
+}
+
+[type="search"] {
+  border: none;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid#F2F2F2;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 1.5rem;
+}
+
+[type="search"]:focus {
+  outline: none;
+}
+
+form .search-filters {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-top: 3rem;
+  padding-left: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.search-filters span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  margin-left: 4%;
+}
+
+.search-filters span:first-child {
+  margin: 0;
+  margin-left: 0.4rem;
+  align-self: center;
+}
+
+.search-filters span i {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #deebff;
+  left: -2.4rem;
+}
+
+.search-filters span i::before {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065fc;
+  font-size: 2rem;
+}
+
+.search-filters span button {
+  padding: 0.3rem 2rem 0.1rem 3.5rem;
+  border: 2px solid #dadada;
+  background-color: white;
+  border-radius: 0 3.4rem 3.4rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 5rem;
+}
+
+.search-filters span button:hover {
+  border: 0;
+  color: white;
+  background-color: #0065fc;
+  box-shadow: 0px 0px 25px 2px #0065fc;
+}
+
+form output {
+  display: flex;
+  align-items: center;
+  margin-top: 3.6rem;
+  margin-left: 0.9rem;
+  font-size: 1.6rem;
+}
+
+form output span {
+  margin-left: 0.8%;
+}
+
+form output i {
+  position: relative;
+  height: 2.2rem;
+  width: 2.2rem;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  font-size: 1.2rem;
   color: #0065fc;
 }
 
+form output i::before {
+  position: absolute;
+  left: calc(50% - 0.225rem);
+  top: calc(50% - 0.6rem);
+}
+
 /* div results */
+
+.blue.fa-star:before {
+  color: #0065fc;
+}
 
 section.rentals-results,
 aside.most-popular {
@@ -146,8 +292,6 @@ aside.activities h2 {
 
 aside.most-popular a,
 .rentals-cards-wrap a {
-  -webkit-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
 }
 
@@ -311,13 +455,13 @@ aside.activities {
 
 aside.activities h2 {
   margin-left: 0;
-  padding-left:0;
+  padding-left: 0;
 }
 
 aside.activities h3 {
   margin-top: 2.1rem;
   margin-left: 1.8rem;
-  padding-left:0;
+  padding-left: 0;
 }
 
 .activities .activities-card-wrap {
@@ -334,7 +478,8 @@ aside.activities h3 {
   width: 22.5%;
 }
 
-.activities-card-wrap a:nth-of-type(1), .activities-card-wrap a:nth-of-type(4) {
+.activities-card-wrap a:nth-of-type(1),
+.activities-card-wrap a:nth-of-type(4) {
   height: 100%;
 }
 
@@ -360,8 +505,6 @@ aside.activities h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  -webkit-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 13px -4px rgba(0, 0, 0, 0.3);
 }
 
@@ -369,7 +512,8 @@ aside.activities h3 {
   border-radius: 2rem 2rem 0 0;
 }
 
-.activities-card-wrap a:nth-of-type(1) .activities-card img, .activities-card-wrap a:nth-of-type(4) .activities-card img {
+.activities-card-wrap a:nth-of-type(1) .activities-card img,
+.activities-card-wrap a:nth-of-type(4) .activities-card img {
   height: 38.86rem;
 }
 
@@ -420,7 +564,7 @@ footer a {
 }
 
 footer h3 {
-  font-size:1.7rem;
+  font-size: 1.7rem;
 }
 
 footer section {
@@ -455,6 +599,37 @@ footer section {
 
   .activities-card-wrap a .activities-card img {
     height: 10rem !important;
+  }
+
+  form .search-filters {
+    justify-content: space-between;
+  }
+
+  .search-filters span {
+    margin-bottom: 1.3rem;
+  }
+
+  .search-filters span:first-child {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .search-filters span {
+    margin-left: 2.5rem;
+  }
+
+  form output {
+    margin-top: 1.9rem;
+    margin-left: 1.5rem;
+  }
+
+  form output i {
+    align-self: baseline;
+    min-width: 2.2rem;
+    margin-right: .7rem
   }
 }
 
@@ -495,7 +670,6 @@ footer section {
     order: 3;
   }
 }
-
 
 @media (min-width: 768px) and (max-width: 992px) {
   .most-popular-cards-wrap article {
@@ -567,16 +741,74 @@ footer section {
     padding-left: 2rem;
   }
 
-  
+  main h1 {
+    margin: 3.4rem 2rem 0 2rem;
+    margin-top: 3.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  main h2 {
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+  }
+
+  form {
+    padding: 0 0.7rem;
+    padding-top: 0rem;
+  }
+
+  form div:first-of-type {
+    display: flex;
+    margin-left: 1.5rem;
+    margin-top: 3.5rem;
+  }
+
+  form div:first-of-type button {
+    border-radius: 1.5rem;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    right: 0.8rem;
+  }
+
+  form .search-filters {
+    justify-content: flex-start;
+  }
+
+  .search-filters span {
+    margin-right: 0.7rem;
+  }
+
+  form div:first-of-type button i {
+    background-color: transparent;
+  }
+
+  .search-filters span:first-child {
+    margin-bottom: 0.1rem;
+  }
+
+  .search-filters span button {
+    font-size: 1.6rem;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
   aside.most-popular {
     border-radius: 0;
     padding: 2rem 5.75% 2.6rem 5.75%;
   }
- 
+
   aside.most-popular h2 {
     margin-top: 1.5rem;
-}
-  
+  }
+
   .most-popular img {
     height: 13.5rem;
     max-height: 13.5rem;
@@ -593,8 +825,8 @@ footer section {
   }
 
   section.rentals-results {
-  padding: 1rem 2rem;
-  background-color: white;
+    padding: 1rem 2rem;
+    background-color: white;
   }
 
   .rentals-results .rentals-cards-wrap {
@@ -604,7 +836,7 @@ footer section {
   .rentals-cards-wrap a {
     margin: 0 0 1.3rem 0;
   }
-  
+
   section.rentals-results a {
     width: 100%;
   }
@@ -645,5 +877,9 @@ footer section {
 @media (max-width: 385px) {
   .most-popular img {
     min-width: 12.594rem;
+  }
+
+  .search-filters span:nth-child(3) {
+    margin-right: 0rem;
   }
 }
