@@ -538,10 +538,15 @@ aside.activities h3 {
 }
 
 /* footer */
+
 footer {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+footer > div {
   max-width: 144rem;
   box-sizing: border-box;
-  background-color: #f2f2f2;
   padding: 2.8rem 5rem;
   margin: 6rem auto 0 auto;
   width: 100%;
@@ -597,8 +602,8 @@ footer section {
     margin-bottom: 3rem;
   }
 
-  .activities-card-wrap a .activities-card img {
-    height: 10rem !important;
+  aside.activities .activities-card-wrap a .activities-card img {
+    height: 10rem;
   }
 
   form .search-filters {
@@ -629,7 +634,7 @@ footer section {
   form output i {
     align-self: baseline;
     min-width: 2.2rem;
-    margin-right: .7rem
+    margin-right: 0.7rem;
   }
 }
 
@@ -858,11 +863,11 @@ footer section {
     width: 90%;
   }
 
-  .activities-card-wrap a .activities-card img {
-    height: 13.3rem !important;
+  aside.activities .activities-card-wrap a .activities-card img {
+    height: 13.3rem;
   }
 
-  footer {
+  footer > div {
     flex-direction: column;
     padding: 3rem 2.6rem;
     margin-top: 2rem;
